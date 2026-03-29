@@ -1,21 +1,18 @@
-import React, { useState } from 'react'
-import Stateup1 from "./components/stateup1";
-import Stateup2 from "./components/Stateup2";
-import UseRefComponent from "./components/UseRefComponent";
+import College from "./contextApi/College";
+import { SubjectConstextApi } from "./contextApi/SubjectContext";
+
 
 
 function App(){
-  const [user,setUser] = useState();
-    function inputHandler(event){
-   setUser(event.target.value)
-    }
+
   
   return(
-    <>
+<SubjectConstextApi.Provider value={"12"}> 
+  <College />
+</SubjectConstextApi.Provider>
+   
 
-<Stateup1  inputHandler={inputHandler}/>
-<Stateup2 user={user}/>
-    </>
+  
   )
 }
 

@@ -1,5 +1,5 @@
-import College from "./contextApi/College";
-import { SubjectConstextApi } from "./contextApi/SubjectContext";
+import UserDataApi from "./apiCalls/UserDataApi";
+
 
 
 
@@ -7,11 +7,11 @@ function App(){
 
   
   return(
-<SubjectConstextApi.Provider value={"12"}> 
-  <College />
-</SubjectConstextApi.Provider>
-   
 
+   
+<>
+<UserDataApi />
+</>
   
   )
 }

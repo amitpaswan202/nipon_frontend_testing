@@ -9,3 +9,7 @@
 ul.listUl.title {
     background-color: aliceblue;
 }
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+}
